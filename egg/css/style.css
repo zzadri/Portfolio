@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
+::selection {
+  color: #ffffff;
+  background: transparent;
+}
+::-moz-selection {
+  color: #ffffff;
+  background: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "VT323";
+}
+body {
+  background-color: #000000;
+}
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  width: 340px;
+  font-size: 0;
+}
+canvas {
+  display: none;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+canvas:focus {
+  outline: none;
+}
+
+/* Top Styles */
+h1 {
+  display: inline-block;
+  width: 100px;
+  font-size: 32px;
+  color: #ffffff;
+}
+.score {
+  display: inline-block;
+  width: 240px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.score_value {
+  font-size: inherit;
+}
+
+/* All screens style */
+#gameover a,
+#setting a,
+#menu a {
+  display: block;
+}
+
+#gameover a,
+#setting a:hover,
+#menu a:hover {
+  cursor: pointer;
+}
+
+#gameover a:hover::before,
+#setting a:hover::before,
+#menu a:hover::before {
+  content: ">";
+  margin-right: 10px;
+}
+
+/* Menu Screen Style */
+#menu {
+  display: block;
+  width: 340px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+}
+
+#menu h2 {
+  -webkit-animation: logo-ani 1000ms linear infinite;
+  animation: logo-ani 1000ms linear infinite;
+  margin-bottom: 30px;
+}
+
+#menu a {
+  font-size: 30px;
+}
+
+
+/* Game Over Screen Style */
+
+#gameover {
+  display: none;
+  width: 340px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+#gameover p {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+/* Settings Screen Style */
+#setting {
+  display: none;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+#setting h2 {
+  margin-bottom: 15px;
+}
+
+#setting p {
+  margin-top: 10px;
+}
+
+#setting input {
+  display: none;
+}
+
+#setting label {
+  cursor: pointer;
+}
+
+#setting input:checked + label {
+  background-color: #fff;
+  color: #000;
+}

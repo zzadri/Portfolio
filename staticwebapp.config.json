@@ -1,0 +1,21 @@
+{
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/html/page-404.html"
+    }
+  },
+  "routes": [
+    {
+      "route": "/en-uk",
+      "rewrite": "/html/page-anglais.html"
+    },
+    {
+      "route": "/Easter-Egg",
+      "rewrite": "/egg/html/index.html"
+    },
+    {
+        "route": "/fr-fr",
+        "rewrite": "/index.html"
+    }
+  ]
+}
