@@ -4577,6 +4577,20 @@ input[type="button"].btn-block {
   gap: 2vh 3vw;
 }
 
+.card-pres{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vh 3vw;
+}
+
+@media screen and (max-width: 992px) {
+  .card-pres{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh 3vw;
+  }
+}
+
 .card {
   position: relative;
   display: flex;
@@ -4610,6 +4624,11 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+}
+
+.card-title>a{
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .card-subtitle {
@@ -9910,6 +9929,8 @@ a.text-dark:focus {
 }
 .masthead .masthead-avatar {
   width: 15rem;
+  border: solid #fff;
+  border-radius: 100%;
 }
 
 @media (min-width: 992px) {
@@ -9943,10 +9964,14 @@ a.text-dark:focus {
   background-color: rgba(22, 101, 122, 0.9);
 }
 
-
-.portfolio-item-caption:hover{
+#img-item-competence:hover {
   cursor: pointer;
-  
+  transition: 0.5s;
+}
+
+#img-item-competence:hover {
+  rotate: 10deg;
+  transition: 0.5s;
 }
 
 .portfolio
@@ -10052,14 +10077,6 @@ form .row:first-child .floating-label-form-group {
   display: inline-block;
 }
 
-.pre {
-  white-space: pre;
-}
-
-.pre-wrap {
-  white-space: pre-wrap;
-}
-
 .icon-contact {
   display: flex;
   height: 5rem;
@@ -10079,6 +10096,79 @@ form .row:first-child .floating-label-form-group {
 .btn-social {
   margin-bottom: 0.5rem;
 }
+
+/* acceuil */
+
+/* géré la taille du typewrite suivant l'écran */
+@media screen and (max-width: 768px) {
+  .typewrite {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 486px) {
+  .typewrite {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 413px) {
+  .typewrite {
+    font-size: 20px;
+  }
+}
+
+/* presentation */
+
+.centertexte {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.presentation-title.moi {
+  text-align: center;
+  padding-top: 2.75%;
+  padding-bottom: 5%;
+}
+.presentation-title.moi-texte {
+  text-align: center;
+}
+
+.presentation-title.langue {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.contenaire.anglais,
+.contenaire.espagole {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contenaire.anglais,
+.contenaire.espagole > img {
+  padding-left: 15px;
+}
+
+/* Langue */
+
+.skill{
+  padding-left: 20%;
+  display: flex;
+  gap: 2vw;
+  font-size: large;
+  padding-bottom: 2.5%;
+}
+
+.skill>p{
+  width: 15vw;
+}
+
+.skill>img{
+  float: left;
+}
+
+/* Mes expériences */
+
+/* time line */
 
 .main-timeline {
   font-family: "Poppins", sans-serif;
@@ -10245,6 +10335,9 @@ form .row:first-child .floating-label-form-group {
   }
 }
 
+/* fin time line */
+
+/* telechargé cv */
 .download {
   margin-top: 2%;
   display: grid;
@@ -10284,16 +10377,22 @@ form .row:first-child .floating-label-form-group {
   color: #80b4e8;
 }
 
+/* fin telechargé cv */
+
+/* egg */
+
 .Easteregg1 {
   text-decoration: none;
   opacity: 0;
   cursor: default;
 }
 
-/* presentation pie */
+/* fin egg */
 
-.centertexte{
-  text-align: center;
-  padding-bottom: 5%;
-}
+/* Mes Formations */
+
+/* Mes compétences */
+
+/* CONTACT */
+
 

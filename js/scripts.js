@@ -1,7 +1,6 @@
 (function ($) {
   "use strict";
 
-
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
@@ -23,7 +22,6 @@
     }
   });
 
-
   $(document).scroll(function () {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
@@ -33,17 +31,14 @@
     }
   });
 
-
   $(".js-scroll-trigger").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
-
 
   $("body").scrollspy({
     target: "#mainNav",
     offset: 80,
   });
-
 
   var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
@@ -72,8 +67,7 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
   });
-})(jQuery); 
-
+})(jQuery);
 
 // auto ecriture
 
@@ -136,7 +130,8 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
-
 // presentation pie
 
-
+(function ($) {
+  new WOW().init();
+})(jQuery);

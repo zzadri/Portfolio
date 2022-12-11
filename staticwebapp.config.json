@@ -11,7 +11,7 @@
     },
     {
       "route": "/Easter-Egg",
-      "rewrite": "/egg/html/index.html"
+      "rewrite": "/egg/index.html"
     },
     {
         "route": "/fr-fr",
