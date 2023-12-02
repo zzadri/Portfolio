@@ -130,8 +130,9 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
-// presentation pie
 
-(function ($) {
-  new WOW().init();
-})(jQuery);
+// badge rootme
+
+//create request with its porperties
+
+//https://api.www.root-me.org/auteurs/409021
