@@ -295,7 +295,7 @@ function auto_copyright($year = 'auto')
         <!-- telechargé mon CV -->
         <div class="download">
             <div class="button" id="button-7">
-                <a class="a-7" href="./pdf/CV_2022-09-11_Adrien_LAFARGUE BTS SIO.pdf" download="CV_2022-09-11_Adrien_LAFARGUE BTS SIO.pdf">Download my resume</a>
+                <a class="a-7" href="./pdf/CV_2023-12-02_Adrien_LAFARGUE.pdf" download="CV_2023-12-02_Adrien_LAFARGUE.pdf">Download my resume</a>
             </div>
         </div>
         <!-- egg -->
