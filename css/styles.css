@@ -209,7 +209,7 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-
+input,
 button {
   margin: 0;
   font-family: inherit;
@@ -217,7 +217,8 @@ button {
   line-height: inherit;
 }
 
-button {
+button,
+input {
   overflow: visible;
 }
 
@@ -480,7 +481,8 @@ a > code {
   color: #212529;
   text-decoration: none;
 }
-.btn:focus {
+.btn:focus,
+.btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(22, 101, 122, 0.25);
 }
@@ -499,7 +501,8 @@ a > code {
   background-color: #104a5a;
   border-color: #0e414f;
 }
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary.focus {
   color: #fff;
   background-color: #104a5a;
   border-color: #0e414f;
@@ -529,7 +532,8 @@ a > code {
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-outline-light:focus {
+.btn-outline-light:focus,
+.btn-outline-light.focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -886,6 +890,10 @@ button.bg-secondary:focus {
 
 .border {
   border: 0.125rem solid #dee2e6 !important;
+}
+
+.border-right {
+  border-right: 0.125rem solid #dee2e6 !important;
 }
 
 .border-0 {
@@ -1279,6 +1287,13 @@ a.text-dark:focus {
   #mainNav .navbar-nav {
     margin-top: 0;
   }
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
 }
 
 .masthead {
@@ -1357,6 +1372,27 @@ a.text-dark:focus {
   line-height: 3rem;
   color: #16657a;
   opacity: 1;
+}
+
+.floating-label-form-group {
+  position: relative;
+  border-bottom: 1px solid #e9ecef;
+}
+.floating-label-form-group input {
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  padding-right: 0;
+  padding-left: 0;
+  resize: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none !important;
+}
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #e9ecef;
 }
 
 .footer {
@@ -1712,6 +1748,10 @@ th, td {
 
 .container {
   width: 100%;
+}
+
+.professional {
+  background-color: #b3b3b3;
 }
 
 
